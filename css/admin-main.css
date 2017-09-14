@@ -1,0 +1,14 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 微软雅黑;
+	font-size: 18px;
+
+}
+.left {
+	margin:0 65% 0 10px;
+}
+.right{
+	background-color: #ccc;
+	margin:0 10px 0 35%;
+}

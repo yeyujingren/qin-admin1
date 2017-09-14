@@ -1,0 +1,56 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+body{
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.header {
+	background-color: steelblue;
+	height: 50px;
+	width: 100%;
+}
+.header p {
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.box {
+	border-bottom: 2px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 8px 28px;
+    padding: 16px 0;
+    position: relative;
+}
+.name {
+	font-size: 1.1em;
+}
+.name a:hover {
+	color: orange;
+}
+.word {
+	font-size: 1em;
+	color: grey;
+	height: 25px;
+}
+.location {
+	float: left;
+}
+.sex {
+	float: right;
+}
+.time {
+	font-size: 0.9em;
+	color: grey;
+}
+.footer {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}

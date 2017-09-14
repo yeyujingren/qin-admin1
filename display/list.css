@@ -1,0 +1,76 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+body{
+    font-family: "Microsoft YaHei", "Helvitica Neue", Helvitica, Arial, sans-serif;
+    list-style-type: none;
+	background-color: #F0F0F0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.header {
+	background-color: steelblue;
+	height: 50px;
+	width: 100%;
+}
+.header p {
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.back {
+    float: left;
+    margin-left: 20px;
+    margin-top:15px;
+}
+.top {
+    background-color: white;
+    padding: 10px 20px 5px 20px;
+    height: 70px;
+}
+.name {
+	font-size: 1.2em;
+}
+.time {
+	font-size: 0.9em;
+	color: grey;
+}
+.middle {
+	margin-top: 8px;
+	background-color: white;
+    padding: 10px 20px 5px 20px;
+    height: 250px;
+}
+.middle li {
+	color: grey;
+	border-bottom: 1.5px solid #DCDCDC;
+	padding: 10px 0; 
+}
+.middle li span {
+	color: black;
+}
+.bottom {
+    margin-top: 8px;
+	background-color: white;
+    padding: 10px 20px 5px 20px;
+    height: 250px;
+}
+.bottom li {
+	color: grey;
+	border-bottom: 1.5px solid #DCDCDC;
+	padding: 10px 0;
+}
+.bottom li span {
+	color: black;
+}
+
+.footer {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}

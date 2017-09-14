@@ -1,0 +1,81 @@
+* {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+/*设置背景颜色*/
+body {
+    background: #eee !important;
+    margin-bottom: 80px;
+}
+
+li {
+    list-style-type: none;
+}
+
+span {
+    color: grey;
+}
+
+.menu-item {
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 8px 10px;
+
+    /*border-bottom: 1px solid #e1e4e8;*/
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #f6f8fa
+}
+
+.menu-item:active {
+    color: red;
+}
+
+.menu-item {
+    font-weight: 600;
+    color: #0366d6;;
+    cursor: default;
+    background-color: #fff
+}
+
+
+.menu-item::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    content: "";
+    background-color: #e36209
+}
+
+/*让底部显示美观*/
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/*一个长方形的白框,就是表单外面的框*/
+.form-signin {
+    max-width: 400px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*防止间距过宽不美观*/
+.form-control {
+    padding: 10px;
+}
+
+
+

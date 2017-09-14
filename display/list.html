@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>勤工助学</title>
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <script src="http://zeptojs.com/zepto.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <a href="index.html" class="back"><img src="back.png" style="width:12px;"></a>
+    <p>勤工助学岗位详情</p>
+</div>
+<hr/>
+
+<div id="content">
+
+</div>
+<script type="text/javascript">
+    var content = document.getElementById("content");
+    var data = [
+        {
+            "name": "明理苑技术部程序员",
+            "time": "2017/05/23",
+            "title": "明理苑大学生网络文化工作室",
+            "type": "高等学校",
+            "location": "校内",
+            "worktime": "40h/月",
+            "workplace": "校内",
+            "pay": "校内岗位标准工资",
+            "deadline": "2017/05/31",
+            "sex": "不限",
+            "grade": "研究生",
+            "place": "屯溪路校区",
+            "need": "研究生时间充裕，报名之前请务必看清楚工作要求和工作时间，报名之后请保持手机通畅，工作人员会通知面试时间和地点。"
+        }
+    ];
+    var html = '';
+    $.each(data, function (index, val) {
+        html += "<div class='top'><div class='name'>" + val.name + "</div> <br /> <div class='time'> 发布于<span>" + val.time + "</span> </div></div> <div class='middle'> <li>单位名称：<span>" + val.title + "</span></li> <li>单位类型：<span>" + val.type + "</span></li>  <li>单位地址：<span>" + val.location + "</span></li> <li>工作时间：<span>" + val.worktime + "</span></li> <li>工作地点：<span>" + val.workplace + "</span></li> <li>工作报酬：<span>" + val.pay + "</span></li> </div>  <div class='bottom'> <li>截止时间：<span>" + val.deadline + "</span></li> <li>性别限制：<span>" + val.sex + "</span></li>  <li>年级限制：<span>" + val.grade + "</span></li> <li>校区限制：<span>" + val.place + "</span></li> <li>具体要求：<span>" + val.need + "</span></li> </div>	 ";
+        content.innerHTML = html;
+    });
+</script>
+
+<div class="footer">
+    <center>
+        <span>@2017 勤工助学中心</span>
+        <br>
+        <span>技术支持：明理苑大学生网络文化工作室</span>
+    </center>
+</div>
+</body>
+</html>
