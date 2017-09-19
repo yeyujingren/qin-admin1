@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>勤工助学</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="http://zeptojs.com/zepto.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p>勤工助学岗位信息</p>
+    </div>
+    <hr />
+    <div id="content">
+       
+    </div>
+
+    <script type="text/javascript">
+        var content = document.getElementById("content"); 
+        var data = [
+        {
+            "name": "明理苑技术部程序员",
+            "location": "屯溪路校区",
+            "sex": "女",
+            "time": "2017/05/30"
+        },{
+            "name": "明理苑产品部产品经理",
+            "location": "不限",
+            "sex": "不限",
+            "time": "2017/05/31"
+        },{
+            "name": "明理苑技术部程序员",
+            "location": "翡翠湖校区",
+            "sex": "男",
+            "time": "2017/05/23"
+        }
+	];
+	var html = '';
+    $.each(data,function(index,val) {
+    	html += "<div class='box'><div class='name'><a href='list.html'>"+ val.name +"</a></div> <div class='word'> <div class='location'> 校区： <span> "+ val.location +" </span> </div>  <div class='sex'> 性别： <span> "+ val.sex +" </span> </div> </div> <div class='time'> 截止日期：<span>"+ val.time +"</span> </div> </div>";
+        content.innerHTML = html;
+    });
+    </script>
+
+    <div class="footer">
+        <center>
+        <span>@2017 勤工助学中心</span>
+        <br>
+        <span>技术支持：明理苑大学生网络文化工作室</span>
+    </center>
+    </div>
+</body>
+</html>

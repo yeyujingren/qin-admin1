@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link href="./css/jquery.dataTables.min.css" />
+<script src="./js/jquery-1.12.4.js"></script>
+
+
+<script src="./js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript"
+	src="js/bootstrap.min.js"></script>
+<script src="js/insertBringInfo.js"></script>
+<script type="text/javascript" src='./js/laydate/laydate.js'></script>
+<script type="text/javascript">
+	lay('#version').html('-v' + laydate.v);
+
+	//执行一个laydate实例
+	laydate.render({
+		elem : '.datepick' //指定元素
+	});
+</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<h3 class="text-center">勤工助学岗位信息</h3>
+		</nav>
+	</header>
+	<div class="container">
+
+
+		<table class="table table-striped">
+
+			<tr>
+				<td><h5 class="col-md-2 text-right">标题:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="title" id="title"
+							required="" autofocus="" placeholder="请输入标题:" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">招聘职位:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="name" id="name"
+							required="" autofocus="" placeholder="请输入单位名称:" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">单位类型:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="type" id="type"
+							required="" autofocus="" placeholder="请输入单位类型:"></input>
+
+
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">单位地址:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="location"
+							id="location" required="" autofocus="" placeholder="请输入单位地址 " />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">工作时间:</h5>
+					<div class="col-md-10">
+						<input type="text" name="worktime" id="worktime"
+							class="form-control" required="" autofocus=""
+							placeholder="请输入工作时间" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">工作地点:</h5>
+					<div class="col-md-10">
+						<input type="text" name="workplace" id="workplace" required=""
+							class="form-control" placeholder="请输入工作地点" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">工作报酬:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="pay" id="pay"
+							required="" placeholder="请输入工作报酬" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">截止时间:</h5>
+					<div class="col-md-10">
+						<input type="text" class="datepick form-control" name="deadline"
+							id="deadline" require="" autofocus="" value=""
+							placeholder="请输入截止时间" />
+
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">性别要求:</h5>
+					<div class="col-md-10">
+						<select name="sex" id="sex" class="form-control" required="">
+							<option value="不限">不限</option>
+							<option value="男">男</option>
+							<option value="女">女</option>
+						</select>
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">招聘人数:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="people" id="people"
+							required="" placeholder="请输入招聘人数" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">年级要求:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="grade" id="grade"
+							required="" placeholder="请输入年级要求" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">校区要求:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="place" id="place"
+							required="" placeholder="请输入校区要求" />
+					</div></td>
+			</tr>
+			<tr>
+				<td><h5 class="col-md-2 text-right">具体要求:</h5>
+					<div class="col-md-10">
+						<input type="text" class="form-control" name="need" id="need"
+							required="" placeholder="请输入具体要求" />
+					</div></td>
+			</tr>
+			<tr>
+				<td>
+					<button class=" btn btn-primary btn-block" onclick="addData()"
+						type="submit">提交</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<center>
+			<span>@2017 勤工助学中心</span> <br /> <span>技术支持：明理苑大学生网络文化工作室</span>
+		</center>
+	</footer>
+
+
+</body>
+</html>
